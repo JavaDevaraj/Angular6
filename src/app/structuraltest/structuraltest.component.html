@@ -1,0 +1,31 @@
+<h1 *ngIf="dispalyName else elseBlock">
+  structuraltest works!
+</h1>
+<ng-template #elseBlock>
+<h1 >
+  Else Block executed
+</h1>
+</ng-template>
+
+<div *ngIf="dispalyName; then thenBlock; else elseDataBk"></div>
+<ng-template #thenBlock>
+<h1 >
+  National way
+</h1>
+</ng-template>
+<ng-template #elseDataBk>
+<h1>
+  Another way
+</h1>
+</ng-template>
+
+<div [ngSwitch]="color">
+<div *ngSwitchCase="'red'">You picked red color</div>
+<div *ngSwitchCase="'blue'">You picked blue color</div>
+<div *ngSwitchCase="'green'">You picked green color</div>
+<div *ngSwitchDefault>Pick again</div>
+</div>
+
+<div *ngFor="let color of colors; index as i; first as f; last as l; odd as o; even as e">
+<h1 >{{i}}--{{color}}--{{f}}--{{l}}--{{o}}--{{e}}</h1>
+</div>

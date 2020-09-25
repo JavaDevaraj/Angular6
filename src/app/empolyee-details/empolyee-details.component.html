@@ -1,0 +1,22 @@
+<h2> Empolyee-Details </h2>
+<table>
+<tr>
+<th>Employee Name</th>
+<th>Work Location</th>
+<th>Age</th>
+<th>Salary</th>
+<th>City</th>
+<th>Address</th>
+</tr>
+<tr>
+<td>{{employeeDetail?.name}}</td>
+<td>{{employeeDetail?.workLocation}}</td>
+<td>{{employeeDetail?.age}}</td>
+<td>{{employeeDetail?.salary}}</td>
+<td>{{employeeDetail?.city}}</td>
+<td>{{employeeDetail?.address}}</td>
+</tr>
+</table>
+<div [innerHTML]="blankSpace"></div>
+
+<button class="button" (click)="gotoEmployeeList()">Back</button>

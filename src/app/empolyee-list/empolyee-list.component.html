@@ -1,0 +1,19 @@
+<h2> Empolyee list </h2>
+<span >{{errorMessage}}</span>
+
+<!-- <ul *ngFor="let employee of employees">
+<li  [class]="isSelected(employee)?'selected':'button'" (click)="onSelectedEmployee(employee)">{{employee.name}}</li>
+</ul> -->
+
+<table>
+<tr>
+<th>Emp Id</th>
+<th>Emp Name</th>
+<th>Emp Detail</th>
+</tr>
+<tr *ngFor="let employee of employees">
+<td>{{employee?.id}}</td>
+<td>{{employee?.name}}</td>
+<td><button [class]="isSelected(employee)?'selected':'button'" (click)="onSelectedEmployee(employee)">Get Employee Detail</button></td>
+</tr>
+</table>

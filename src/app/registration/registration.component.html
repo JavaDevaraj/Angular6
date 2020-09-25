@@ -1,0 +1,33 @@
+<p class="center">
+  {{pageName}}
+  {{pageName.length}}
+  {{greetUser()}}
+</p>
+
+<h1 class="text-special">CodeEvolution</h1>
+
+<h1 [class]="dangerStyle">TestEvolution</h1>
+
+<h1 class="text-special" [class]="dangerStyle">FinalEvolution</h1>
+
+<h1 [class.text-danger]="hasError">ErrorEvolution</h1>
+
+<h1 [ngClass]="messageClasses">ErrorEvolution</h1>
+
+<h1 [style.color]="'orange'">Style Binding</h1>
+
+<h1 [style.color]="hasError? 'red': 'green'">Style Binding 1</h1>
+
+<h1 [style.color]="highLightColor">Style Binding 2</h1>
+
+<h1 [ngStyle]="titleStyles">Style Binding 3</h1>
+
+<button (click)="onClick()">{{greetingMessage}}</button>
+
+<button (click)="onClickTest($event)">{{greetingMessage}}</button><br>
+
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
+
+<input [(ngModel)]="userName" type="text">
+{{userName}}

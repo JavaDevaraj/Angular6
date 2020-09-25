@@ -1,0 +1,28 @@
+table {
+   border: 1px solid black;
+   width: 100%;
+}
+
+th {
+   border: 1px solid black;
+   height: 30px;
+} 
+
+td {
+   border: 1px solid black;
+   height: 30px;
+   text-align:center;
+}
+
+.backButoon {
+	
+	background-color: DodgerBlue; /* Green */
+    border: 1px solid grey;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+}
